@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en" dir="ltr">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Breaks free the old habbits.">
+	<title>Synthetic Vscode-style  Scrollbar</title>
+	<link rel="stylesheet" href="scroller.css">
+	<style>
+
+		html,
+		body {
+			height: 100%;
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		aside, main {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+		}
+
+		aside {
+			right: 0;
+			width: 20%;
+			background-color: #f3f3f3;
+		}
+		
+		main {
+			left: 0;
+			width: 80%;
+		}
+
+		#content {
+			background: linear-gradient(90deg, #fff 20px, transparent 1%) center, linear-gradient(#fff 20px, transparent 1%) center, silver;
+			background-size: 22px 22px;
+			width: 2000px;
+			height: 2000px;
+		}
+	</style>
+</head>
+
+<body>
+	<main class="container">
+		<div id="content"></div>
+	</main>
+	<aside></aside>
+
+	<script type="text/javascript" src="src/Scroller.js"></script>
+	<script type="text/javascript" src="src/Scrollbar.js"></script>
+	<script type="text/javascript">
+		const scroller = new Scroller(document.querySelector('.container'))
+
+		window.onresize = () => {
+			scroller.resize()
+		}
+	</script>
+</body>
+
+</html>

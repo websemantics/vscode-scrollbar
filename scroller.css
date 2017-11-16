@@ -1,0 +1,64 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.cf-scroller {
+}
+
+.cf-scroller > .cf-scroller__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
+}
+
+.cf-scroller > .cf-scroller__scrollbar {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cf-scroller > .cf-scroller__scrollbar[data-orientation~='vertical'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+}
+
+.cf-scroller > .cf-scroller__scrollbar[data-orientation~='horizontal'] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+}
+
+.cf-scroller > .cf-scroller__scrollbar > .cf-slider {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.cf-scroller
+  > .cf-scroller__scrollbar[data-orientation~='vertical']
+  > .cf-slider {
+  position: relative;
+  top: 0;
+  width: 10px;
+}
+
+.cf-scroller
+  > .cf-scroller__scrollbar[data-orientation~='horizontal']
+  > .cf-slider {
+  position: relative;
+  left: 0;
+  height: 10px;
+}
+
+.cf-scroller > .invisible {
+  opacity: 0;
+}
+
+.cf-scroller > .invisible.fade {
+  transition: opacity 0.8s linear;
+}
