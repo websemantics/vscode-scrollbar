@@ -13,7 +13,7 @@
 
 Synthetic scrollbar with transparent track and style-able knob, Visual Stuido Code style.
 
-Try [Demo](./index.html)
+Try [Demo](https://websemantics.github.io/vscode-scrollbar/)
 
 ## Usage
 
@@ -34,7 +34,7 @@ And the following style,
 }
 ```
 
-To enable the Vscode-style scroller to manager such a large content element, import the javascript / css files of this project into a new html page then create an instance of the `Scroller` class (see [Demo](./index.html))
+To enable the Vscode-style scroller to manager such a large content element, import the javascript / css files of this project into a new html page then create an instance of the `Scroller` class (see [Demo](https://websemantics.github.io/vscode-scrollbar/))
 
 ```js
 const scroller = new Scroller(document.querySelector('.container'))
