@@ -13,7 +13,7 @@
 
 Synthetic scrollbar with transparent track and style-able knob, Visual Stuido Code style.
 
-Try [Demo](https://websemantics.github.io/vscode-scrollbar/)
+[![Live demo](https://img.shields.io/badge/Live%20demo-%E2%86%92-9D6EB3.svg?style=flat-square)](https://websemantics.github.io/vscode-scrollbar/)
 
 ## Usage
 
